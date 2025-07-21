@@ -270,6 +270,7 @@ main > section{
 .some_facts_img1 {
   padding: 40px 20px; /* bigger padding for larger box */
   font-weight: bold;
+  background-color:gainsboro;
   border: 2px solid orange;
   border-radius: 10px;
   text-align: center;
