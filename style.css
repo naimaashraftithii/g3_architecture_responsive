@@ -1,0 +1,126 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #727272;
+}
+.color_gray{
+ color: #727272;
+}
+.color_orange{
+  color: #FF900E;
+}
+.color_orange2{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.color_dark_black{
+color: #131313;
+}
+.inter-sans {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar , .banner_section ,.header_container_banner_img {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.orange_btn{
+    font-size: 1em;
+    font-weight: 200;
+    color:#FFF4E7;
+    background-color: #FF900E;
+    border-color: #FF900E;
+    border-radius: 9px;
+    padding:15px;
+    margin:20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.orange_btn:hover{
+  
+    color:#FFF4E7;
+    background-color:mediumblue;
+    border-color: mediumblue;
+    border-radius: 9px;
+    padding:20px;
+    margin:25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+ 
+
+}
+
+
+.logo{
+    font-size: 3rem;
+    font-family: 300;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;           /* Make links horizontal */
+    list-style: none;        /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    gap: 20px;               /* Add space between items */
+}
+
+.nav-link {
+    text-decoration: none;   /* Remove underline */
+    color: #131313;          /* Set link color */
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: white;          /* Optional: hover effect */
+    background-color:orangered;
+    border-radius: 9px;
+    padding:10px;
+    margin:15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.banner_section{
+    margin: 100px auto;
+    text-align: center;
+}
+.banner_txt1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+.banner_txt2 {
+    margin-top: 50px;
+    font-weight: 300;
+   
+}
+.header_container_banner_img{
+    width:100%;
+  
+}
+
+
+
+
+@media screen  and (max-width: 576px){
+    .nav_list, .navbar{
+    flex-direction: column;
+    }
+    
+}
