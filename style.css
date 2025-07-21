@@ -245,7 +245,7 @@ main > section{
 
 /* some fact start here */
 .some_facts {
-
+  
   padding: 40px 20px;
 }
 
@@ -263,18 +263,19 @@ main > section{
   margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 30px; /* reduce gap between boxes */
+  gap: 30px;
   max-width: 1200px;
 }
 
 .some_facts_img1 {
-  padding: 40px 20px; /* bigger padding for larger box */
+  padding: 40px 20px;
   font-weight: bold;
-  background-color:gainsboro;
+  background-color: gainsboro;
   border: 2px solid orange;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .some_facts_img1:hover {
@@ -290,6 +291,11 @@ main > section{
 /* Our sponsors sections */
 .our_sponsors{
   text-align: center;
+}
+.our_sponsors_text1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin:20px auto;
 }
 .our_sponsors_img{
   margin:50px auto;
@@ -372,18 +378,30 @@ main > section{
     transform: translateX(-50%);
   }
   /* some facts */
+  .some_facts{
+    justify-items: center;
+  }
  .some_facts_img {
     grid-template-columns: 1fr;
-    gap: 15px;
   }
 
   .some_facts_img1 {
-    padding: 30px 15px; /* reduce padding for mobile */
+    height: auto; /* adjust for mobile */
+    padding: 20px;
   }
   /* our sponsors */
    .our_sponsors_img {
     grid-template-columns: 1fr;
     gap: 15px;
+  } 
+  .our_sponsors_text2{
+     font-size: .8rem;
+     font-weight: 300;
+  }
+  .footer, .our_sponsors_text {
+      text-align: center;
+      justify-items: center;
+      justify-content: center;
   }
 }
 
@@ -419,14 +437,26 @@ main > section{
     transform: translateX(-50%);
   }
   /* some facts */
- .some_facts_img {
+  .some_facts{
+    justify-items: center;
+  }
+   .some_facts_img {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
 /* our sponsors */
+.our_sponsors{
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
  .our_sponsors_img {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .footer{
+      text-align: center;
+      justify-items: center;
+      justify-content: center;
   }
 }
 
